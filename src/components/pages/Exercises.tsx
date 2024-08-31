@@ -1,6 +1,6 @@
+// import StatCard from "../UI snippets/StatCard";
+// import { Flame } from "lucide-react";
 import ListItem from "../UI snippets/ListItem";
-import StatCard from "../UI snippets/StatCard";
-import { Flame } from "lucide-react";
 import TitleBar from "../UI snippets/TitleBar";
 import SubtitleBar from "../UI snippets/SubtitleBar";
 import ActionBar from "../UI snippets/ActionBar";
