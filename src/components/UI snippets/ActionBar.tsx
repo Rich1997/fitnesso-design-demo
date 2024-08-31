@@ -1,8 +1,8 @@
-import { Filter, Search, Trash, X } from 'lucide-react';
-import { PiSelectionBackgroundBold } from 'react-icons/pi';
-import { BiCheckboxChecked, BiSolidCheckboxChecked } from 'react-icons/bi';
-import { Button } from '@/components/ui/button';
-import { useSelectionContext } from '@/context/SelectionContext';
+import { Filter, Search, Trash, X } from "lucide-react";
+import { PiSelectionBackgroundBold } from "react-icons/pi";
+import { BiCheckboxChecked, BiSolidCheckboxChecked } from "react-icons/bi";
+import { Button } from "@/components/ui/button";
+import { useSelectionContext } from "@/context/SelectionContext";
 
 interface ActionBarProps {
     allItems: string[];
@@ -20,11 +20,7 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
             <div className="flex justify-between items-center pb-4 text-accent font-medium">
                 <div className="flex gap-2 text-sm items-center">
                     <div className="flex gap-2 items-center">
-                        <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={clearSelections}
-                        >
+                        <Button variant="ghost" size="sm" onClick={clearSelections}>
                             <X size={14} />
                         </Button>
                         {selectedItems.length} selected

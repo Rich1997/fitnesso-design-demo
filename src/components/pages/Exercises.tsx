@@ -1,25 +1,25 @@
-import ListItem from '../UI snippets/ListItem';
-import StatCard from '../UI snippets/StatCard';
-import { Flame } from 'lucide-react';
-import TitleBar from '../UI snippets/TitleBar';
-import SubtitleBar from '../UI snippets/SubtitleBar';
-import ActionBar from '../UI snippets/ActionBar';
-import PaddedFlexContainer from '../UI snippets/PaddedFlexContainer';
-import PaddedContainer from '../UI snippets/PaddedContainer';
-import FAB from '.././FAB';
+import ListItem from "../UI snippets/ListItem";
+import StatCard from "../UI snippets/StatCard";
+import { Flame } from "lucide-react";
+import TitleBar from "../UI snippets/TitleBar";
+import SubtitleBar from "../UI snippets/SubtitleBar";
+import ActionBar from "../UI snippets/ActionBar";
+import PaddedFlexContainer from "../UI snippets/PaddedFlexContainer";
+import PaddedContainer from "../UI snippets/PaddedContainer";
+import FAB from ".././FAB";
 
 const exercisesList = [
     {
-        title: 'Bicep Curls',
-        description: 'biceps, forearms',
-        mainValue: '12',
-        subValue: 'x3',
+        title: "Bicep Curls",
+        description: "biceps, forearms",
+        mainValue: "12",
+        subValue: "x3",
     },
-    { title: 'Squat', description: 'quadriceps, hamstrings, glutes, core' },
-    { title: 'Deadlift', description: 'back, glutes, hamstrings, traps' },
-    { title: 'Bench Press', description: 'chest, triceps, shoulders' },
-    { title: 'French Press' },
-    { title: 'Pull-ups', description: 'back, biceps, shoulders' },
+    { title: "Squat", description: "quadriceps, hamstrings, glutes, core" },
+    { title: "Deadlift", description: "back, glutes, hamstrings, traps" },
+    { title: "Bench Press", description: "chest, triceps, shoulders" },
+    { title: "French Press" },
+    { title: "Pull-ups", description: "back, biceps, shoulders" },
 ];
 
 const Exercises = () => {

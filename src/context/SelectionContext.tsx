@@ -1,5 +1,5 @@
 // src/contexts/SelectionContext.tsx
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext } from "react";
 
 interface SelectionContextType {
     selectedItems: string[];
@@ -8,21 +8,13 @@ interface SelectionContextType {
     selectAll: (items: string[]) => void;
 }
 
-const SelectionContext = createContext<SelectionContextType | undefined>(
-    undefined
-);
+const SelectionContext = createContext<SelectionContextType | undefined>(undefined);
 
-export const SelectionProvider: React.FC<{ children: React.ReactNode }> = ({
-    children,
-}) => {
+export const SelectionProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
     const toggleSelection = (title: string) => {
-        setSelectedItems((prev) =>
-            prev.includes(title)
-                ? prev.filter((item) => item !== title)
-                : [...prev, title]
-        );
+        setSelectedItems((prev) => (prev.includes(title) ? prev.filter((item) => item !== title) : [...prev, title]));
     };
 
     const clearSelections = () => {
@@ -50,9 +42,7 @@ export const SelectionProvider: React.FC<{ children: React.ReactNode }> = ({
 export const useSelectionContext = () => {
     const context = useContext(SelectionContext);
     if (context === undefined) {
-        throw new Error(
-            'useSelectionContext must be used within a SelectionProvider'
-        );
+        throw new Error("useSelectionContext must be used within a SelectionProvider");
     }
     return context;
 };

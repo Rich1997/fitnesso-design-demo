@@ -1,4 +1,4 @@
-import TitleBar from '../UI snippets/TitleBar';
+import TitleBar from "../UI snippets/TitleBar";
 
 const Home = () => {
     return <TitleBar title="Home" />;
