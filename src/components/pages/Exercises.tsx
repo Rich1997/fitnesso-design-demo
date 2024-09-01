@@ -29,7 +29,7 @@ const Exercises = () => {
         <>
             <TitleBar title="Exercises" />
             <SubtitleBar subtitle="Today's activity" showDetailsButton={true} />
-            <PaddedContainer padding="4">
+            <PaddedContainer padding="6">
                 <ActionBar allItems={allExerciseTitles} />
             </PaddedContainer>
             <PaddedFlexContainer>

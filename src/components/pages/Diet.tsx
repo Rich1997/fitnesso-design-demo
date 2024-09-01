@@ -83,7 +83,7 @@ const Diet = () => {
                     variant="destructive"
                 />
             </PaddedContainer>
-            <PaddedContainer padding="4">
+            <PaddedContainer padding="6">
                 <ActionBar allItems={allDietTitles} />
             </PaddedContainer>
             <PaddedFlexContainer>
