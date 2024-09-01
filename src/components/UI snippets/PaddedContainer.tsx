@@ -3,10 +3,9 @@ import { ReactNode } from "react";
 type PaddedContainerProps = {
     children: ReactNode;
     padding?: string;
-    className?: string;
 };
 
-const PaddedContainer: React.FC<PaddedContainerProps> = ({ children, padding = "2", className }) => {
+const PaddedContainer: React.FC<PaddedContainerProps> = ({ children, padding = "2" }) => {
     const numericPadding = parseInt(padding);
     const inlineStyle = {
         paddingLeft: `${numericPadding * 0.25}rem`,
