@@ -48,11 +48,11 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
     return (
         <div className="flex justify-between items-center pb-4 text-accent font-medium">
             <div className="flex gap-2 text-sm items-center">
-                <Search size={20} />
+                <Search size={18} />
                 Search
             </div>
             <div className="flex gap-2 text-sm items-center">
-                <Filter size={20} />
+                <Filter size={18} />
                 Filter
             </div>
         </div>
