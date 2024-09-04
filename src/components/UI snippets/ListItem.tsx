@@ -16,9 +16,7 @@ const ListItem: React.FC<ListItemProps> = ({ title, description = "No info", mai
 
     return (
         <Card
-            className={`p-2 min-h-[52px] flex items-center cursor-pointer select-none ${
-                isSelected ? "bg-primary/20" : ""
-            }`}
+            className={`p-2 min-h-16 flex items-center cursor-pointer select-none ${isSelected ? "bg-primary/20" : ""}`}
             onClick={() => toggleSelection(title)}
         >
             <div className="flex gap-2 w-full items-start">

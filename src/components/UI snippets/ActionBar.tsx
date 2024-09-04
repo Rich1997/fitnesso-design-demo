@@ -21,7 +21,7 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
                 <div className="flex gap-2 text-sm items-center">
                     <div className="flex gap-2 items-center">
                         <Button variant="ghost" size="sm" onClick={clearSelections}>
-                            <X size={14} />
+                            <X size={24} />
                         </Button>
                         {selectedItems.length} selected
                     </div>
@@ -29,16 +29,16 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
                 <div className="flex gap-4 items-center">
                     <Button variant="ghost" size="sm" onClick={handleSelectAll}>
                         {selectedItems.length === allItems.length ? (
-                            <BiSolidCheckboxChecked size={20} />
+                            <BiSolidCheckboxChecked size={30} />
                         ) : (
-                            <BiCheckboxChecked size={20} />
+                            <BiCheckboxChecked size={30} />
                         )}
                     </Button>
                     <Button variant="ghost" size="sm">
-                        <PiSelectionBackgroundBold size={16} />
+                        <PiSelectionBackgroundBold size={22} />
                     </Button>
                     <Button variant="ghost" size="sm" className="ml-4">
-                        <Trash size={14} />
+                        <Trash size={20} />
                     </Button>
                 </div>
             </div>
@@ -48,11 +48,11 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
     return (
         <div className="flex justify-between items-center pb-4 text-accent font-medium">
             <div className="flex gap-2 text-sm items-center">
-                <Search size={12} />
+                <Search size={20} />
                 Search
             </div>
             <div className="flex gap-2 text-sm items-center">
-                <Filter size={12} />
+                <Filter size={20} />
                 Filter
             </div>
         </div>

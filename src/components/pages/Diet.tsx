@@ -77,10 +77,10 @@ const Diet = () => {
             <PaddedContainer>
                 <StatCard
                     icon={Apple}
-                    iconColor={"bg-red-300"}
+                    iconColor={"bg-green-300"}
                     value={"1250"}
                     label={"Calories consumed"}
-                    variant="destructive"
+                    variant="primary"
                 />
             </PaddedContainer>
             <PaddedContainer padding="6">
