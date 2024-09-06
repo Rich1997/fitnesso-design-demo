@@ -18,7 +18,7 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
                 <div className="flex gap-2 text-sm items-center">
                     <div className="flex gap-2 items-center">
                         <Button variant="ghost" size="sm" onClick={clearSelections}>
-                            <span class="material-symbols-rounded">close</span>
+                            <span className="material-symbols-rounded">close</span>
                         </Button>
                         {selectedItems.length} selected
                     </div>
@@ -32,10 +32,10 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
                         )}
                     </Button>
                     <Button variant="ghost" size="sm">
-                        <span class="material-symbols-rounded">select_all</span>
+                        <span className="material-symbols-rounded">select_all</span>
                     </Button>
                     <Button variant="ghost" size="sm" className="ml-4">
-                        <span class="material-symbols-rounded">delete</span>
+                        <span className="material-symbols-rounded">delete</span>
                     </Button>
                 </div>
             </div>
@@ -45,11 +45,11 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
     return (
         <div className="flex justify-between items-center pb-4 text-accent font-medium h-10">
             <div className="flex gap-2 text-sm items-center">
-                <span class="material-symbols-rounded">search</span>
+                <span className="material-symbols-rounded">search</span>
                 Search
             </div>
             <div className="flex gap-2 text-sm items-center">
-                <span class="material-symbols-rounded">filter_alt</span>
+                <span className="material-symbols-rounded">filter_alt</span>
                 Filter
             </div>
         </div>
