@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import "@material-symbols/font-400";
 import { ThemeProvider } from "./context/ThemeContext.tsx";
 import { SelectionProvider } from "./context/SelectionContext";
 

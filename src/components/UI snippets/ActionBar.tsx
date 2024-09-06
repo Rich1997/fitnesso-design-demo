@@ -1,6 +1,3 @@
-import { Filter, Search, Trash, X } from "lucide-react";
-import { PiSelectionBackgroundBold } from "react-icons/pi";
-import { BiCheckboxChecked, BiSolidCheckboxChecked } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 import { useSelectionContext } from "@/context/SelectionContext";
 
@@ -17,11 +14,11 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
 
     if (selectedItems.length > 0) {
         return (
-            <div className="flex justify-between items-center pb-4 text-accent font-medium">
+            <div className="flex justify-between items-center pb-4 text-accent font-medium h-10">
                 <div className="flex gap-2 text-sm items-center">
                     <div className="flex gap-2 items-center">
                         <Button variant="ghost" size="sm" onClick={clearSelections}>
-                            <X size={24} />
+                            <span class="material-symbols-rounded">close</span>
                         </Button>
                         {selectedItems.length} selected
                     </div>
@@ -29,16 +26,16 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
                 <div className="flex gap-4 items-center">
                     <Button variant="ghost" size="sm" onClick={handleSelectAll}>
                         {selectedItems.length === allItems.length ? (
-                            <BiSolidCheckboxChecked size={30} />
+                            <span className="material-symbols-rounded mso">check_box</span>
                         ) : (
-                            <BiCheckboxChecked size={30} />
+                            <span className="material-symbols-rounded">check_box</span>
                         )}
                     </Button>
                     <Button variant="ghost" size="sm">
-                        <PiSelectionBackgroundBold size={22} />
+                        <span class="material-symbols-rounded">select_all</span>
                     </Button>
                     <Button variant="ghost" size="sm" className="ml-4">
-                        <Trash size={20} />
+                        <span class="material-symbols-rounded">delete</span>
                     </Button>
                 </div>
             </div>
@@ -46,13 +43,13 @@ const ActionBar: React.FC<ActionBarProps> = ({ allItems }) => {
     }
 
     return (
-        <div className="flex justify-between items-center pb-4 text-accent font-medium">
+        <div className="flex justify-between items-center pb-4 text-accent font-medium h-10">
             <div className="flex gap-2 text-sm items-center">
-                <Search size={18} />
+                <span class="material-symbols-rounded">search</span>
                 Search
             </div>
             <div className="flex gap-2 text-sm items-center">
-                <Filter size={18} />
+                <span class="material-symbols-rounded">filter_alt</span>
                 Filter
             </div>
         </div>

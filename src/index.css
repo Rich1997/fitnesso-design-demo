@@ -48,6 +48,11 @@ code {
     color-scheme: light;
 }
 
+/* material-symbols-outlined */
+.mso {
+    font-variation-settings: "FILL" 1;
+}
+
 .min-h-patch {
     height: 100dvh;
     min-height: 100vh;
